@@ -4,34 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="teglalap.js"> </script>
+    <link rel="stylesheet" href="teglalap.css">
     <title>Tégalalap</title>
 </head>
 
 <body>
-    <h1>Téglalap kerülete, területe</h1>
-    <div>
-        <h2>Fogalma,jellemzői:</h2>
-        <p>A téglalap (latinul oblongum) egy olyan négyszög, amelynek minden szöge derékszög.
-            Két-két szemközti oldala egyenlő hosszúságú, ezért minden téglalap egyben paralelogramma is.
-            A négyzet a téglalap egy speciális típusa, amelynek minden oldala egyenlő.
-            A téglalap belső szögeinek összege 360°. Mivel a szemközti szögeinek összege 180°, ezért a téglalap egyúttal
-            húrnégyszög is.
-        </p>
-    </div>
-    <div>
-        <h1>Add meg a téglalap odalait cm-ben!</h1>
-        a= <input type="text" id="a">cm<br>
-        b= <input type="text" id="b">cm<br>
+    <form>
+        <fieldset id="elso">
+                <legend><h1>Téglalap kerülete, területe</h1></legend>
+                <div >
+                    <h2>Fogalma,jellemzői:</h2>
+                    <p>A téglalap (latinul oblongum) egy olyan négyszög, amelynek minden szöge derékszög.
+                        Két-két szemközti oldala egyenlő hosszúságú, ezért minden téglalap egyben paralelogramma is.
+                        A négyzet a téglalap egy speciális típusa, amelynek minden oldala egyenlő.
+                        A téglalap belső szögeinek összege 360°. Mivel a szemközti szögeinek összege 180°, ezért a téglalap egyúttal
+                        húrnégyszög is.
+                    </p>
+                </div>
+        </fieldset>
+    </form> 
+    <form>
+        <fieldset id="masodik"> 
+            <legend><h1>Add meg a téglalap odalait cm-ben!</h1></legend>  
+                <div >
+                    
+                    a= <input type="text" id="a">cm<br>
+                    b= <input type="text" id="b">cm<br>
 
-        <strong>Kerülete:2(a+b)</strong><br>
-        <strong>Területe:a*b</strong><br>
-        <button onclick="szamol()">Számol</button>
-        <button onclick="torol()">Törlés</button><br>
+                    <strong>Kerülete:2(a+b)</strong><br>
+                    <strong>Területe:a*b</strong><br>
+                    <button onclick="szamol()">Számol</button>
+                    <button onclick="torol()">Törlés</button><br>
 
 
-        <strong id="k">K= cm</strong><br>
-        <strong id="t">T=  cm<sup>2</sup></strong><br>
-    </div>
+                    <strong id="k">K= cm</strong><br>
+                    <strong id="t">T=  cm<sup>2</sup></strong><br>
+                </div>
+        </fieldset>
+    </form> 
 
 </body>
 
